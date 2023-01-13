@@ -1,0 +1,26 @@
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\appsettings.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\BMCR projeckt.staticwebassets.runtime.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\BMCR projeckt.exe
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\BMCR projeckt.deps.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\BMCR projeckt.runtimeconfig.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\BMCR projeckt.dll
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\bin\Debug\net6.0\BMCR projeckt.pdb
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.csproj.AssemblyReference.cache
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.AssemblyInfoInputs.cache
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.AssemblyInfo.cs
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.csproj.CoreCompileInputs.cache
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.RazorAssemblyInfo.cache
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.RazorAssemblyInfo.cs
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\scopedcss\bundle\BMCR projeckt.styles.css
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\scopedcss\projectbundle\BMCR projeckt.bundle.scp.css
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.dll
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\refint\BMCR projeckt.dll
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.pdb
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\BMCR projeckt.genruntimeconfig.cache
+C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\obj\Debug\net6.0\ref\BMCR projeckt.dll

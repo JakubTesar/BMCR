@@ -1,0 +1,30 @@
+﻿@model BMCR_projeckt.ViewModels.BuildingViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Create Building</title>
+</head>
+<body>
+<div>
+   <div class="container">
+       <h1>Create Builing</h1>
+       <form method="post" asp-controller="Create" asp-action="CreateBuilding">
+           <div class="form-group">
+               <label asp-for="Name" class="control-label"></label>
+               <input asp-for="Name" class="form-control"/>
+               <span asp-validation-for="Name" class="text-danger"></span>
+           </div>
+           <div class="form-group">
+               <input type="submit" value="Create Building" class="btn btn-primary mt-2"/>
+           </div>
+       </form>
+   </div>
+</div>
+</body>
+</html>
