@@ -1,4 +1,5 @@
-﻿using BMCR_projeckt.Services;
+﻿using BMCR_projeckt.FormModels;
+using BMCR_projeckt.Services;
 using BMCR_projeckt.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,15 +15,15 @@ public class Create : Controller
     }
     public IActionResult CreateBuilding()
     {
-        return View(Bs.Br.Buildings);
+        return View(new BuildingFormModels());
     }
     [HttpPost]
-    public IActionResult CreateBuilding(BuildingViewModel Building)
+    public IActionResult CreateBuilding(BuildingFormModels Building)
     {
         BuildingViewModel b = new BuildingViewModel();
         b.Name = Building.Name;
         b.Rooms = new List<RoomViewModel>();
         Bs.AddBuilding(b);
-        return View(Bs.Br.Buildings);
+        return View();
     }
 }
