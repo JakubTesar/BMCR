@@ -4,6 +4,10 @@ namespace BMCR_projeckt.Repositories;
 
 public class BuildingsRepository
 {
-    public List<BuildingViewModel> Buildings {get; set;}
-        
+    public List<BuildingViewModel> Buildings { get; set; }
+
+    public BuildingsRepository()
+    {
+        Buildings = new List<BuildingViewModel>();
+    }
 }
