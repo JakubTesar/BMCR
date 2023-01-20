@@ -2,5 +2,5 @@
 
 public class RoomViewModel
 {
-    
+    public string Name { get; set; }
 }

@@ -11,7 +11,7 @@ public class Create : Controller
     // GET
     public IActionResult Index()
     {
-        return View(Bs.Br.Buildings);
+        return View(Bs.GetBuildings());
     }
     public IActionResult CreateBuilding()
     {
