@@ -14,13 +14,7 @@ public class BuildingsRepository
     public void AddBuilding(BuildingViewModel b)
     {
         Buildings.Add(b);
-        string a = b.Name + ";";
-        foreach (RoomViewModel room in b.Rooms)
-        {
-            a += room.Name + ",";
-        }
-
-        a += ";";
+        string a = b.Name + ";" + b.ID;
         TextWriter tsw = new StreamWriter("save.txt", true);
         tsw.WriteLine(a);
         tsw.Close();
@@ -35,8 +29,23 @@ public class BuildingsRepository
             string[] a = line.Split(";");
             BuildingViewModel b = new BuildingViewModel();
             b.Name = a[0];
+            b.ID = a[1];
             bVMs.Add(b);
         }
+
         return bVMs;
+    }
+
+    public void SaveAll(List<BuildingViewModel> bVMs)
+    {
+        TextWriter tsw = new StreamWriter("save.txt", false);
+        foreach (BuildingViewModel b in bVMs)
+        {
+            string a = b.Name + ";" + b.ID;
+
+            tsw.WriteLine(a);
+        }
+
+        tsw.Close();
     }
 }

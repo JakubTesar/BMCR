@@ -9,8 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Index</title>
 </head>
 <body class="bg-dark text-white">
@@ -23,24 +23,17 @@
             <div class="card bg-dark border m-2" style="width: 25rem;">
                 <div class="card-body">
                     <h5 class="card-title">@b.Name</h5>
-                    <h:link styleClass="btn btn-info me-2" outcome="detail.xhtml" value="Read more">
-                        <f:param name="id" value="#{postVar.id}"/>
-                    </h:link>
-                    <h:link styleClass="btn btn-warning mx-2" outcome="edit.xhtml" value="✏">
-                        <f:param name="id" value="#{postVar.id}"/>
-                    </h:link>
-                    <h:form styleClass="d-inline">
-                        <h:commandButton styleClass="btn btn-danger mx-2" value="💣"
-                                         action="#{postService.deletePost(postVar.id)}"/>
-                    </h:form>
+                    <a asp-controller="Create" asp-action="EditBuilding" asp-route-ID="@b.ID" class="btn btn-warning">✏</a>
+                    <a asp-controller="Create" asp-action="DeleteBuilding" asp-route-ID="@b.ID" class="btn btn-danger">💣</a>
+                    <a asp-controller="Create" asp-action="Detail" asp-route-ID="@b.ID" class="btn btn-info">Detail</a>
                 </div>
             </div>
         }
     }
 </div>
 <div class="d-flex justify-content-center">
-    <a type="button" class="btn btn-primary " href="/Create/CreateBuilding">
-        Create new
+    <a type="button" class="btn btn-success "href="/Create/CreateBuilding">
+        Create new BUILDING
     </a>
 </div>
 

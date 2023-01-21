@@ -8,22 +8,51 @@ namespace BMCR_projeckt.Controllers;
 public class Create : Controller
 {
     public BuildingService Bs = new BuildingService();
+
     // GET
     public IActionResult Index()
     {
         return View(Bs.GetBuildings());
     }
+
     public IActionResult CreateBuilding()
     {
         return View(new BuildingFormModels());
     }
+
     [HttpPost]
     public IActionResult CreateBuilding(BuildingFormModels Building)
     {
         BuildingViewModel b = new BuildingViewModel();
         b.Name = Building.Name;
         b.Rooms = new List<RoomViewModel>();
+        Guid guid = Guid.NewGuid();
+        b.ID = guid.ToString();
         Bs.AddBuilding(b);
         return View();
     }
+
+    public IActionResult DeleteBuilding(string ID)
+    {
+        Bs.SaveAll(Bs.DeleteBuilding(ID));
+        return Redirect("/Create");
+    }
+
+    public IActionResult EditBuilding(string ID)
+    {
+        return View(Bs.Filter(ID));
+    }
+
+    [HttpPost]
+    public IActionResult EditBuilding(BuildingViewModel Building)
+    {
+        Bs.EditBuilding(Building);
+        return View();
+    }
+
+    public IActionResult Detail(string ID)
+    { 
+        return View(Bs.Filter(ID));
+    }
+
 }

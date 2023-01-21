@@ -1,0 +1,57 @@
+﻿@using BMCR_projeckt.ViewModels
+@model BMCR_projeckt.ViewModels.BuildingViewModel
+@{
+    int a = 0;
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Detail</title>
+</head>
+<body class="bg-dark text-white">
+<h1>Detail of building: @Model.Name</h1>
+
+<div class="d-flex justify-content-center align-items-center flex-column border-3 m-5">
+    <h2>@Model.Name</h2>
+    <p class="text-light mb-2">@Model.ID</p>
+    
+    <div class="d-flex justify-content-center">
+        <a type="button" class="btn btn-success"href="/CreateRoom/CreateRoom">
+            Create new ROOM
+        </a>
+    </div>
+    @if (@Model.Rooms != null)
+    {
+        <table class="table table-striped table-dark">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">OD:</th>
+                <th scope="col">DO:</th>
+            </tr>
+            </thead>
+            <tbody>
+           
+            @foreach (RoomViewModel r in @Model.Rooms)
+            {
+                <tr>
+                    <th scope="row">@a++</th>
+                    <td>@r.Name</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+</div>
+
+<div></div>
+</body>
+</html>
