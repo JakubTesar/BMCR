@@ -21,7 +21,35 @@ public class CreateRoomController : Controller
         r.Name = Room.Name;
         Guid guid = Guid.NewGuid();
         r.ID = guid.ToString();
-        Rs.AddRoom(r, Room);
+        r.BuildingID = Room.BuildingID;
+        Rs.AddRoom(r, r.BuildingID);
+        Bs.Filter(r.BuildingID).Rooms = Rs.GetRooms(r.BuildingID);
         return View();
+    }
+    public IActionResult DeleteRoom(string ID, string BuildingID)
+    {
+        Rs.SaveAll(Rs.DeleteRoom(ID, BuildingID), BuildingID);
+        return Redirect("/Create");
+    }
+    public IActionResult EditRoom(string ID, string BuildingID)
+    {
+        return View(Rs.Filter(ID, BuildingID));
+    }
+
+    [HttpPost]
+    public IActionResult EditRoom(RoomViewModel Room)
+    {
+        Rs.EditRoom(Room, Room.BuildingID);
+        return View();
+    }
+
+    public IActionResult DetailRoom(string ID, string BuildingID)
+    {
+        TimeService Ts = new TimeService();
+        RoomViewModel rVM = new RoomViewModel();
+        rVM = Rs.Filter(ID,BuildingID);
+        rVM.Times = Ts.GetTimes(ID);
+        rVM.BuildingID = BuildingID;
+        return View(rVM);
     }
 }

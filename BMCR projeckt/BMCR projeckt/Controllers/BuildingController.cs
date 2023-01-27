@@ -51,8 +51,11 @@ public class Create : Controller
     }
 
     public IActionResult Detail(string ID)
-    { 
-        return View(Bs.Filter(ID));
+    {
+        RoomService Rs = new RoomService();
+        BuildingViewModel bVM = new BuildingViewModel();
+        bVM = Bs.Filter(ID);
+        bVM.Rooms = Rs.GetRooms(ID);
+        return View(bVM);
     }
-
 }

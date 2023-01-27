@@ -6,8 +6,8 @@ namespace BMCR_projeckt.Services;
 public class RoomService
 {
     public RoomRepository Rm = new RoomRepository();
-    
-    public void AddRoom(RoomViewModel Room, string BuildingID )
+
+    public void AddRoom(RoomViewModel Room, string BuildingID)
     {
         Rm.AddRoom(Room, BuildingID);
     }
@@ -38,16 +38,21 @@ public class RoomService
     }
 
     public void EditRoom(RoomViewModel r, string BuildingID)
-    {for (int i = 0; i < GetRooms(BuildingID).Count; i++)
+    {
+        for (int i = 0; i < GetRooms(BuildingID).Count; i++)
         {
             if (GetRooms(BuildingID).ElementAt(i).ID == r.ID)
             {
                 List<RoomViewModel> a = GetRooms(BuildingID);
+                BuildingService Bs = new BuildingService();
+                RoomService Rs = new RoomService();
                 a.ElementAt(i).Name = r.Name;
+                //Bs.Filter(BuildingID).Rooms.ElementAt(i).Name = Rs.GetRooms(r.BuildingID).ElementAt(i).Name;
                 SaveAll(a, BuildingID);
             }
         }
     }
+   
     public RoomViewModel Filter(string ID, string BuildingID)
     {
         foreach (RoomViewModel r in GetRooms(BuildingID))
@@ -60,5 +65,4 @@ public class RoomService
 
         return new RoomViewModel();
     }
-
 }

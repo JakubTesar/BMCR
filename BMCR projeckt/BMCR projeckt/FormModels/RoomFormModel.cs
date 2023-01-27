@@ -6,5 +6,7 @@ public class RoomFormModel
 {
     [Required]
     public string Name { get; set; }
+    [Required]
+    public string BuildingID { get; set; }
 
 }

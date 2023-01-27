@@ -1,5 +1,5 @@
 ﻿@using BMCR_projeckt.ViewModels
-@model BMCR_projeckt.ViewModels.BuildingViewModel
+@model BMCR_projeckt.ViewModels.RoomViewModel
 @{
     int a = 0;
 }
@@ -11,51 +11,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <title>Detail</title>
+    <title>Detail Room</title>
 </head>
 <body class="bg-dark text-white">
-<h1 class="m-2">Detail of building: @Model.Name</h1>
+<h1 class="m-2">Detail of room: @Model.Name</h1>
 
 <div class="d-flex justify-content-center align-items-center flex-column border-3 m-5">
     <h2>@Model.Name</h2>
     <p class="text-light mb-2">@Model.ID</p>
 
     <div class="d-flex justify-content-center">
-        <a type="button" class="btn btn-success"href="/CreateRoom/CreateRoom">
-            Create new ROOM
+        <a type="button" class="btn btn-success"href="/Time/CreateTime">
+            Create new TIME
         </a>
     </div>
     <table class="table table-striped table-dark">
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
-            <th scope="col">Info</th>
         </tr>
         </thead>
         <tbody>
-
-        @foreach (RoomViewModel r in Model.Rooms)
+        @foreach (TimeViewModel t in Model.Times)
         {
             <tr>
                 <th scope="row">@a</th>
-                <td>@r.Name</td>
+                <td>@t.Description</td>
+                <td>@t.From</td>
+                <td>@t.To</td>
                 <td>
-                    <a asp-controller="CreateRoom" asp-action="EditRoom" asp-route-ID="@r.ID" asp-route-BuildingID="@Model.ID" class="btn btn-warning">
+                    <a asp-controller="Time" asp-action="EditTime" asp-route-ID="@t.ID" asp-route-BuildingID="@Model.ID" class="btn btn-warning">
                         ✏
                     </a>
                 </td>
                 <td>
-                    <a asp-controller="CreateRoom" asp-action="DeleteRoom" asp-route-ID="@r.ID" asp-route-BuildingID="@Model.ID" class="btn btn-danger">
+                    <a asp-controller="Time" asp-action="DeleteTime" asp-route-ID="@t.ID" asp-route-BuildingID="@Model.ID" class="btn btn-danger">
                         💣
-                    </a>
-                </td>
-                <td>
-                    <a asp-controller="CreateRoom" asp-action="DetailRoom" asp-route-ID="@r.ID"
-                       asp-route-BuildingID="@Model.ID" class="btn btn-info">
-                        Detail
                     </a>
                 </td>
             </tr>

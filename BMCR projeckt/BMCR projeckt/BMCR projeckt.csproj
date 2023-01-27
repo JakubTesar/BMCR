@@ -10,6 +10,8 @@
     <ItemGroup>
       <Folder Include="Models" />
       <Folder Include="Pages" />
+      <Folder Include="Rooms" />
+      <Folder Include="Times" />
     </ItemGroup>
 
 </Project>

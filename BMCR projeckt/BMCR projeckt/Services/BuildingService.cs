@@ -57,8 +57,8 @@ public class BuildingService
                 return b;
             }
         }
-
         return new BuildingViewModel();
     }
 
+    
 }
