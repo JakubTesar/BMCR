@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tessi\\Documents\\GitHub\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj": {}
+    "C:\\Users\\tessi\\OneDrive\\Plocha\\UgaBugaRepo\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tessi\\Documents\\GitHub\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj": {
+    "C:\\Users\\tessi\\OneDrive\\Plocha\\UgaBugaRepo\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tessi\\Documents\\GitHub\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj",
+        "projectUniqueName": "C:\\Users\\tessi\\OneDrive\\Plocha\\UgaBugaRepo\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj",
         "projectName": "BMCR projeckt",
-        "projectPath": "C:\\Users\\Tessi\\Documents\\GitHub\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj",
-        "packagesPath": "C:\\Users\\Tessi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tessi\\Documents\\GitHub\\BMCR\\BMCR projeckt\\BMCR projeckt\\obj\\",
+        "projectPath": "C:\\Users\\tessi\\OneDrive\\Plocha\\UgaBugaRepo\\BMCR\\BMCR projeckt\\BMCR projeckt\\BMCR projeckt.csproj",
+        "packagesPath": "C:\\Users\\tessi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tessi\\OneDrive\\Plocha\\UgaBugaRepo\\BMCR\\BMCR projeckt\\BMCR projeckt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tessi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tessi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -56,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Tessi\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

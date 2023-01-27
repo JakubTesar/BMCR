@@ -39,4 +39,14 @@ public class TimeRepository
         
         return rVMs;
     }
+    public void SaveAll(List<TimeViewModel> tVMs, string RoomID)
+    {
+        TextWriter tsw = new StreamWriter("Times/timesOf" + RoomID + ".txt", false);
+        foreach (TimeViewModel t in tVMs)
+        {
+            string a = t.Description + ";" + t.ID + ";" + t.From.ToString() + ";" + t.To;
+            tsw.WriteLine(a);
+        } 
+        tsw.Close();
+    }
 }

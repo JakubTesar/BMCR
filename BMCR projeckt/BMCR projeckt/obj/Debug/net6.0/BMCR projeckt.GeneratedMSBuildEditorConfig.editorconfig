@@ -8,73 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BMCR_projeckt
 build_property.RootNamespace = BMCR_projeckt
-build_property.ProjectDir = C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt\
+build_property.ProjectDir = C:\Users\tessi\OneDrive\Plocha\UgaBugaRepo\BMCR\BMCR projeckt\BMCR projeckt\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Tessi\Documents\GitHub\BMCR\BMCR projeckt\BMCR projeckt
+build_property.MSBuildProjectDirectory = C:\Users\tessi\OneDrive\Plocha\UgaBugaRepo\BMCR\BMCR projeckt\BMCR projeckt
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/CreateRoom/CreateRoom.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/CreateRoom/CreateRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUm9vbVxDcmVhdGVSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/CreateRoom/DetailRoom.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/CreateRoom/DetailRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUm9vbVxEZXRhaWxSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/CreateRoom/EditRoom.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/CreateRoom/EditRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUm9vbVxFZGl0Um9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/CreateBuilding.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/CreateBuilding.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlXENyZWF0ZUJ1aWxkaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/Detail.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlXERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/EditBuilding.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/EditBuilding.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlXEVkaXRCdWlsZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/Index.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Create/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Home/Index.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Home/Privacy.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Time/CreateTime.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Time/CreateTime.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxDcmVhdGVUaW1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Time/DetailTime.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxEZXRhaWxUaW1lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Time/EditTime.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Time/EditTime.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVxFZGl0VGltZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/_ViewImports.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/_ViewStart.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tessi/Documents/GitHub/BMCR/BMCR projeckt/BMCR projeckt/Views/Shared/_Layout.cshtml]
+[C:/Users/tessi/OneDrive/Plocha/UgaBugaRepo/BMCR/BMCR projeckt/BMCR projeckt/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-q0118udf3q

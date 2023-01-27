@@ -29,14 +29,19 @@ public class TimeController : Controller
        // Rs.Filter(t.RoomID, )
         return View();
     }
-
-    public IActionResult EditTime()
+    public IActionResult DeleteTime(string ID, string RoomID)
     {
-        return View();
+        Ts.SaveAll(Ts.DeleteTime(ID, RoomID), RoomID);
+        return Redirect("/Create");
     }
-    
-    public void DeleteTime()
+    public IActionResult EditTime(string ID, string RoomID)
     {
-        
+        return View(Ts.Filter(ID, RoomID));
+    }
+    [HttpPost]
+    public IActionResult EditTime(TimeViewModel Time)
+    {
+        Ts.EditTime(Time, Time.RoomID);
+        return View();
     }
 }

@@ -45,12 +45,12 @@
                 <td>@t.From</td>
                 <td>@t.To</td>
                 <td>
-                    <a asp-controller="Time" asp-action="EditTime" asp-route-ID="@t.ID" asp-route-BuildingID="@Model.ID" class="btn btn-warning">
+                    <a asp-controller="Time" asp-action="EditTime" asp-route-ID="@t.ID" asp-route-RoomID="@Model.ID" class="btn btn-warning">
                         ✏
                     </a>
                 </td>
                 <td>
-                    <a asp-controller="Time" asp-action="DeleteTime" asp-route-ID="@t.ID" asp-route-BuildingID="@Model.ID" class="btn btn-danger">
+                    <a asp-controller="Time" asp-action="DeleteTime" asp-route-ID="@t.ID" asp-route-RoomID="@Model.ID" class="btn btn-danger">
                         💣
                     </a>
                 </td>
