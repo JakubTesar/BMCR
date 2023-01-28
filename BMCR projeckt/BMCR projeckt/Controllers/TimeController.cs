@@ -9,9 +9,11 @@ public class TimeController : Controller
 {
     public TimeService Ts = new TimeService();
     public RoomService Rs = new RoomService();
-    public IActionResult CreateTime()
+    public IActionResult CreateTime(string RoomID)
     {
-        return View(new TimeFormModel());
+        TimeFormModel t = new TimeFormModel();
+        t.RoomID = RoomID;
+        return View(t);
     }
 
     [HttpPost]
@@ -24,10 +26,11 @@ public class TimeController : Controller
         t.RoomID = Time.RoomID;
         t.From = Time.From;
         t.To = Time.To;
-        Ts.AddTime(t, t.RoomID);
-        //Bs.Filter(r.BuildingID).Rooms = Rs.GetRooms(r.BuildingID);
-       // Rs.Filter(t.RoomID, )
-        return View();
+        if (CheckVolidTime(t))
+        {
+            Ts.AddTime(t, t.RoomID);
+        }
+        return Redirect("../Create/Index");
     }
     public IActionResult DeleteTime(string ID, string RoomID)
     {
@@ -41,7 +44,22 @@ public class TimeController : Controller
     [HttpPost]
     public IActionResult EditTime(TimeViewModel Time)
     {
-        Ts.EditTime(Time, Time.RoomID);
+        if (CheckVolidTime(Time))
+        {
+            Ts.EditTime(Time, Time.RoomID);
+        }
         return View();
+    }
+
+    public bool CheckVolidTime(TimeViewModel t)
+    {
+        foreach (TimeViewModel t2 in Ts.GetTimes(t.RoomID))
+        {
+            if (t.From < t2.To && t2.From < t.To)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

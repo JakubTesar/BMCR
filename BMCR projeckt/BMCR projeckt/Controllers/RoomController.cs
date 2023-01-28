@@ -9,11 +9,12 @@ public class CreateRoomController : Controller
 {
     public RoomService Rs = new RoomService();
     public BuildingService Bs = new BuildingService();
-    public IActionResult CreateRoom()
+    public IActionResult CreateRoom(string BuildingID)
     {
-        return View(new RoomFormModel());
+        RoomFormModel rFM = new RoomFormModel();
+        rFM.BuildingID = BuildingID;
+        return View(rFM);
     }
-
     [HttpPost]
     public IActionResult CreateRoom(RoomFormModel Room)
     {
@@ -24,7 +25,7 @@ public class CreateRoomController : Controller
         r.BuildingID = Room.BuildingID;
         Rs.AddRoom(r, r.BuildingID);
         Bs.Filter(r.BuildingID).Rooms = Rs.GetRooms(r.BuildingID);
-        return View();
+        return Redirect("../Create/Detail/"+Room.BuildingID);
     }
     public IActionResult DeleteRoom(string ID, string BuildingID)
     {
@@ -35,14 +36,12 @@ public class CreateRoomController : Controller
     {
         return View(Rs.Filter(ID, BuildingID));
     }
-
     [HttpPost]
     public IActionResult EditRoom(RoomViewModel Room)
     {
         Rs.EditRoom(Room, Room.BuildingID);
         return View();
     }
-
     public IActionResult DetailRoom(string ID, string BuildingID)
     {
         TimeService Ts = new TimeService();

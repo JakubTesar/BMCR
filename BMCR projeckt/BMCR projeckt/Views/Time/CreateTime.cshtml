@@ -12,12 +12,10 @@
 <div>
     <div class="container">
         <h1 class="m-2">Create Builing</h1>
-        <form method="post" asp-controller="Time" asp-action="CreateTime">
+        <form method="post" asp-controller="Time" asp-action="CreateTime" asp-route-RoomID="@Model.RoomID">
             <div class="form-group">
                 <label for="Description">Description:</label>
                 <input type="text" asp-for="Description" name="Description" class="form-control w-25"/>
-                <label for="RoomID">RoomID:</label>
-                <input type="text" asp-for="RoomID" name="RoomID" class="form-control w-25"/>
                 <label for="From">From:</label>
                 <input type="DateTime" asp-for="From" name="From" class="form-control w-25"/>
                 <label for="To">To:</label>
@@ -32,6 +30,7 @@
 <div class="d-flex justify-content-center">
     <a href="/Create/Index" class="btn btn-secondary">View buildings</a>
 </div>
+
 
 </body>
 </html>
