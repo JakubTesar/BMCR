@@ -29,7 +29,7 @@ public class Create : Controller
         Guid guid = Guid.NewGuid();
         b.ID = guid.ToString();
         Bs.AddBuilding(b);
-        return View();
+        return Redirect("Index");
     }
 
     public IActionResult DeleteBuilding(string ID)
@@ -47,7 +47,7 @@ public class Create : Controller
     public IActionResult EditBuilding(BuildingViewModel Building)
     {
         Bs.EditBuilding(Building);
-        return View();
+        return Redirect("/Create");
     }
 
     public IActionResult Detail(string ID)

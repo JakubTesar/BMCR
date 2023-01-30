@@ -30,6 +30,11 @@ public class TimeController : Controller
         {
             Ts.AddTime(t, t.RoomID);
         }
+        else
+        {
+            ViewData["Error"] = "Times collides";
+            return View(Time);
+        }
         return Redirect("../Create/Index");
     }
     public IActionResult DeleteTime(string ID, string RoomID)
@@ -47,6 +52,11 @@ public class TimeController : Controller
         if (CheckVolidTime(Time))
         {
             Ts.EditTime(Time, Time.RoomID);
+        }
+        else
+        {
+            ViewData["Error"] = "Times collides";
+            return View(Time);
         }
         return View();
     }
